@@ -35,6 +35,7 @@ The OSI model consists of seven layers, each representing a different aspect of 
 The Physical Layer is the lowest layer of the OSI model and deals with the physical transmission of data over a network. It defines the electrical, mechanical, and procedural aspects of the physical medium, such as cables, connectors, and signaling methods.
 
 ### Layer 2: Data Link Layer
+![2nd layer](https://media.geeksforgeeks.org/wp-content/uploads/20230405130015/DatalinkLayer-660x335.jpg)
 
 The Data Link Layer provides reliable and error-free data transfer between adjacent network nodes. It is responsible for framing data into frames, error detection and correction, and managing access to the physical medium. Ethernet, Wi-Fi, and Point-to-Point Protocol (PPP) are examples of protocols that operate at this layer.
 
