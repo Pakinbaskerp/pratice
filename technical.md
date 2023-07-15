@@ -1,8 +1,8 @@
 # OSI Model
 
 The OSI (Open Systems Interconnection) model is a conceptual framework that standardizes the functions of a communication system into seven distinct layers. Each layer in the OSI model has a specific role and interacts with adjacent layers to enable communication between different devices and systems. This documentation provides an overview of the OSI model and its layers.
-
-![layers](https://media.geeksforgeeks.org/wp-content/uploads/20210220204638/cn1.png){ width="800" height="600" style="display: block; margin: 0 auto" }
+<p align="center">
+![layers](https://media.geeksforgeeks.org/wp-content/uploads/20210220204638/cn1.png)</p>
 ## Table of Contents
 - [OSI Model](#osi-model)
   - [Table of Contents](#table-of-contents)
