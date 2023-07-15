@@ -1,8 +1,10 @@
 # OSI Model
 
 The OSI (Open Systems Interconnection) model is a conceptual framework that standardizes the functions of a communication system into seven distinct layers. Each layer in the OSI model has a specific role and interacts with adjacent layers to enable communication between different devices and systems. This documentation provides an overview of the OSI model and its layers.
-<p align="center">
-![layers](https://media.geeksforgeeks.org/wp-content/uploads/20210220204638/cn1.png)</p>
+
+![layers](https://media.geeksforgeeks.org/wp-content/uploads/20210220204638/cn1.png)
+
+
 ## Table of Contents
 - [OSI Model](#osi-model)
   - [Table of Contents](#table-of-contents)
@@ -26,6 +28,9 @@ The OSI model was developed by the International Organization for Standardizatio
 The OSI model consists of seven layers, each representing a different aspect of the communication process. These layers are:
 
 ### Layer 1: Physical Layer
+
+
+![1st layer](https://media.geeksforgeeks.org/wp-content/uploads/20230405124830/data-bits.jpg)
 
 The Physical Layer is the lowest layer of the OSI model and deals with the physical transmission of data over a network. It defines the electrical, mechanical, and procedural aspects of the physical medium, such as cables, connectors, and signaling methods.
 
