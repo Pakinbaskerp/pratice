@@ -1,6 +1,6 @@
 # OSI Model
 
-The OSI (Open Systems Interconnection) model is a conceptual framework that standardizes the functions of a communication system into seven distinct layers. Each layer in the OSI model has a specific role and interacts with adjacent layers to enable communication between different devices and systems. This documentation provides an overview of the OSI model and its layers.
+A conceptual framework known as the OSI (Open Systems Interconnection) model standardizes communication system functions into seven different levels. The OSI model's layers each have a specialized purpose and work together to facilitate communication across various systems and devices. This page gives a summary of the layers in the OSI model.
 
 ![layers](https://media.geeksforgeeks.org/wp-content/uploads/20210220204638/cn1.png)
 
@@ -21,7 +21,7 @@ The OSI (Open Systems Interconnection) model is a conceptual framework that stan
 
 ## Introduction
 
-The OSI model was developed by the International Organization for Standardization (ISO) to provide a framework for designing and understanding computer network protocols. It divides the communication process into a series of layers, each responsible for specific tasks. The layering concept helps in modularizing network functionality and enables interoperability between different vendors and technologies.
+The International Organization for Standardization (ISO) created the OSI model to offer a framework for creating and comprehending computer network protocols. It separates the communication process into many levels, each of which is in charge of carrying out particular duties. The layering idea promotes compatibility across various vendors and technologies and aids in the modularization of network operations.
 
 ## OSI Model Layers
 
@@ -32,22 +32,34 @@ The OSI model consists of seven layers, each representing a different aspect of 
 
 ![1st layer](https://media.geeksforgeeks.org/wp-content/uploads/20230405124830/data-bits.jpg)
 
-The Physical Layer is the lowest layer of the OSI model and deals with the physical transmission of data over a network. It defines the electrical, mechanical, and procedural aspects of the physical medium, such as cables, connectors, and signaling methods.
+The physical layer is the bottom layer in the OSI reference model. The actual physical connection between the devices is under its control. Information in the form of bits is present in the physical layer. It is in charge of sending certain bits from one node to the next. As soon as data is received, this layer takes the signal and converts it into 0s and 1s before sending them to the Data Link layer, which rejoins the frame.  
+
+
 
 ### Layer 2: Data Link Layer
 ![2nd layer](https://media.geeksforgeeks.org/wp-content/uploads/20230405130015/DatalinkLayer-660x335.jpg)
 
-The Data Link Layer provides reliable and error-free data transfer between adjacent network nodes. It is responsible for framing data into frames, error detection and correction, and managing access to the physical medium. Ethernet, Wi-Fi, and Point-to-Point Protocol (PPP) are examples of protocols that operate at this layer.
+The message is delivered from node to node through the data connection layer. This layer's primary responsibility is to provide error-free data flow from one node to another via the physical layer. It is the duty of the DLL to transmit a packet to the host using its MAC address when it enters a network. 
+There are two sublayers that make up the data link layer:  
+
+Media Access Control (MAC)<br>Logical Link Control (LLC)
 
 ### Layer 3: Network Layer
 
-The Network Layer facilitates the delivery of data packets across multiple networks. It handles logical addressing, routing, and packet forwarding. IP (Internet Protocol) is a commonly used protocol at this layer, and routers operate at Layer 3.
+The network layer facilitates the transfer of data between hosts that are part of various networks. It also handles packet routing, which is the choice of the quickest route among a variety of options to transmit the packet. The network layer inserts the IP addresses of the sender and recipient in the header. 
+
 
 ### Layer 4: Transport Layer
 
-The Transport Layer ensures reliable and orderly delivery of data between end systems. It provides end-to-end error recovery, flow control, and multiplexing of data streams. Transmission Control Protocol (TCP) and User Datagram Protocol (UDP) are prominent protocols at this layer.
+The transport layer transfers services from the network layer to the application layer. Segments are the name for the data in the transport layer. It is in charge of ensuring that the entire message is delivered from beginning to end. Additionally, the transport layer offers confirmation of a successful data transmission and retransmits the data if a mistake is discovered.
 
+To guarantee appropriate data transfer on the sender's end, the transport layer gets the prepared data from the top levels, conducts segmentation, and also provides flow and error control. Additionally, it adds Source and Destination port numbers to its header before sending the network layer with the split data. 
+
+Usually, either manually or by default, this destination port number is specified. For instance, a web application normally uses port 80 when requesting a web server because this is the standard port given to web applications. Numerous apps have set default ports. 
+
+The Transport Layer at the recipient's end reads the port number from the header and sends the data it has received to the appropriate application. The segmented data are additionally sequenced and reassembled. 
 ### Layer 5: Session Layer
+![4 layer](https://media.geeksforgeeks.org/wp-content/uploads/20230405124947/communication.jpg)
 
 The Session Layer establishes, manages, and terminates sessions between communicating devices. It enables synchronization, checkpointing, and recovery of data exchange. This layer ensures that data is delivered in the correct sequence and can handle interruptions or restarts in communication.
 
@@ -61,7 +73,7 @@ The Application Layer provides services directly to end-users or applications. I
 
 ## Conclusion
 
-The OSI model is a fundamental framework for understanding and designing network communication systems. It divides the communication process into seven layers, each with its specific responsibilities. By adhering to the standards defined by the OSI model, network engineers and developers can ensure interoperability, modularity, and scalability in their network implementations.
+The OSI model is a fundamental framework for understanding and designing network communication systems. It divides the communication process into seven layers, each with its specific responsibilities. By adhering to the standards defined by the OSI model, network engineers, and developers can ensure interoperability, modularity, and scalability in their network implementations.
 
 For a more detailed understanding of the OSI model and its layers, refer to the official documentation provided by the International Organization for Standardization (ISO).
 
